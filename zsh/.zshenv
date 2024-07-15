@@ -11,3 +11,4 @@ export ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
 
 # use nvim as the editor
 export EDITOR=nvim
+export MANPAGER="nvim +Man!"

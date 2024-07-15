@@ -3,6 +3,10 @@
 
 export HISTFILE="$XDG_STATE_HOME/.zsh_history"
 
+typeset -U path cdpath fpath
+setopt auto_cd
+cdpath=(~ ~/Desktop/Unity/ ~/.config/)
+
 # Path to your Oh My Zsh installation.
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
