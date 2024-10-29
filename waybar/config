@@ -135,8 +135,8 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -151,19 +151,13 @@
         "on-click": "pavucontrol"
     },
     "custom/media": {
-        "format": "{icon}",
-        "return-type": "json",
         "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
         "on-click": "playerctl play-pause",
         "on-click-right": "playerctl stop",
         "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
         "on-scroll-up": "playerctl next",
         "on-scroll-down": "playerctl previous",
         "escape": true,
-        "exec": "zsh $HOME/.config/waybar/mediaplayer.sh 2> /dev/null" // Script in resources/custom_modules folder
+        "exec": "zsh $HOME/.config/waybar/mediaplayer.sh" // Script in resources/custom_modules folder
     }
 }
