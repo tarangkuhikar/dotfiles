@@ -13,10 +13,11 @@
 	editor = nvim
 	pager = less -F -X
 [diff]
-	tool = vimdiff3
-[difftool "vimdiff3"]
-	path = nvim
+	tool = nvimdiff
 [merge]
-	tool = vimdiff3
-[mergetool "vimdiff3"]
-	path = nvim
+	tool = nvimdiff2
+[merge]
+	tool = unityyamlmerge
+[mergetool "unityyamlmerge"]
+	trustExitCode = false
+	cmd = '/Applications/Unity/Hub/Editor/2022.3.45f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"

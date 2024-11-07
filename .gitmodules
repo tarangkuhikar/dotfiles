@@ -3,4 +3,4 @@
 	url = git@github.com:tarangkuhikar/nvim
 [submodule "omz"]
 	path= zsh/.oh-my-zsh
-	url = git@github.com:ohmyzsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh
