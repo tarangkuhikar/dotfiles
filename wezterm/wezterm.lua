@@ -12,9 +12,7 @@ wezterm.on('gui-startup', function()
   window:gui_window():maximize()
 end)
 
-config.front_end = 'WebGpu'
 config.color_scheme = 'Tokyo Night'
-config.font_size = 12
 config.tab_bar_at_bottom = true
 config.enable_scroll_bar = false
 config.use_fancy_tab_bar = false
