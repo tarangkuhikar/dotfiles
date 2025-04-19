@@ -83,8 +83,8 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "{:%d-%m-%Y}"
     },
     "cpu": {
         "format": "{usage}% "
@@ -107,9 +107,9 @@
     },
     "battery": {
         "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
+             "good": 95,
+            "warning": 20,
+            "critical": 10
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",

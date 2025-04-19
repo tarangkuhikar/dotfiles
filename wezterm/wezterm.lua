@@ -7,7 +7,7 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
-config.enable_wayland = false
+config.front_end = 'WebGpu'
 config.font_size = 9
 config.default_prog = { 'zsh' }
 
@@ -16,7 +16,7 @@ wezterm.on('gui-startup', function()
   window:gui_window():maximize()
 end)
 
-config.color_scheme = 'Tokyo Night'
+-- config.color_scheme = 'Tokyo Night'
 config.tab_bar_at_bottom = true
 config.enable_scroll_bar = false
 config.use_fancy_tab_bar = false
