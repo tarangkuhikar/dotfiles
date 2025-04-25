@@ -5,7 +5,7 @@ export HISTFILE="$XDG_STATE_HOME/.zsh_history"
 
 typeset -U path cdpath fpath
 setopt auto_cd
-cdpath=(~ ~/Projects/ ~/Projects/Unity)
+cdpath=(~ ~/Projects/ ~/Projects/*/)
 
 # Path to your Oh My Zsh installation.
 # Set name of the theme to load --- if set to "random", it will
