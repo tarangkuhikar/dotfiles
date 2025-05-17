@@ -9,7 +9,11 @@ end
 
 config.front_end = 'WebGpu'
 config.font_size = 9
-config.default_prog = { 'zsh' }
+if wezterm.target_triple:find 'windows' then
+  config.default_prog = { 'pwsh' }
+else
+  config.default_prog = { 'zsh' }
+end
 
 wezterm.on('gui-startup', function()
   local _, _, window = mux.spawn_window {}
