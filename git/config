@@ -20,7 +20,7 @@
 	tool = unityyamlmerge
 [mergetool "unityyamlmerge"]
 	trustExitCode = false
-	cmd = '/Applications/Unity/Hub/Editor/2022.3.45f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+	cmd = '/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
