@@ -10,6 +10,8 @@ export HISTFILE="$XDG_STATE_HOME/zsh/.zsh_history"
 
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export ZSH_CUSTOM="$ZDOTDIR/custom"
+export ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
 
 export EDITOR=nvim
 export GIT_EDITOR=nvim

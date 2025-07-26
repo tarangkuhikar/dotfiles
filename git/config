@@ -16,6 +16,11 @@
 	tool = nvimdiff
 [merge]
 	tool = nvimdiff2
+[merge]
+	tool = unityyamlmerge
+[mergetool "unityyamlmerge"]
+	trustExitCode = false
+	cmd = '/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
 [filter "lfs"]
        clean = git-lfs clean -- %f
        smudge = git-lfs smudge -- %f
