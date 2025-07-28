@@ -8,7 +8,7 @@ if wezterm.config_builder then
 end
 
 config.front_end = 'WebGpu'
-config.font_size = 9
+
 if wezterm.target_triple:find 'windows' then
   config.default_prog = { 'pwsh' }
 else

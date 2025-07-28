@@ -1,0 +1,8 @@
+[user]
+	name = Tarang Kuhikar
+	email = tarang.k@devstree.in
+[merge]
+	tool = unityyamlmerge
+[mergetool "unityyamlmerge"]
+	trustExitCode = false
+	cmd = '/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"

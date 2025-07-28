@@ -3,8 +3,6 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 
-export HISTFILE="$XDG_STATE_HOME/zsh/.zsh_history"
-
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZSH="$ZDOTDIR/oh-my-zsh"
 export ZSH_CUSTOM="$ZDOTDIR/custom"
@@ -20,3 +18,4 @@ export VISUAL=nvim
 export DIFFPROG="nvim -d"
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
