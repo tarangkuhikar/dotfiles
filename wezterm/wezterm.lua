@@ -15,6 +15,10 @@ else
   config.default_prog = { 'zsh' }
 end
 
+if wezterm.target_triple:find 'linux' then
+  config.font_size = 9
+end
+
 wezterm.on('gui-startup', function()
   local _, _, window = mux.spawn_window {}
   window:gui_window():maximize()
