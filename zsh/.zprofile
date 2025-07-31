@@ -1,4 +1,5 @@
-host=$(uname)
-if [[ "$host" == "Darwin" ]]; then
+OS="$(uname)"
+if [[ "${OS}" == "Darwin" ]]
+then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi

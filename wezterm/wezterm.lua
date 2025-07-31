@@ -11,8 +11,6 @@ config.front_end = 'WebGpu'
 
 if wezterm.target_triple:find 'windows' then
   config.default_prog = { 'pwsh' }
-else
-  config.default_prog = { 'zsh' }
 end
 
 if wezterm.target_triple:find 'linux' then
