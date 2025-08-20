@@ -1,9 +1,9 @@
 [submodule "omz"]
 	path= zsh/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
-[submodule "zsh/custom/plugins/zsh-autosuggestions"]
+[submodule "zsh-autosuggestions"]
 	path = zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "zsh/custom/themes/powerlevel10k"]
+[submodule "powerlevel10k"]
 	path = zsh/custom/themes/powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
+	url = https://github.com/romkatv/powerlevel10k
