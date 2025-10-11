@@ -11,6 +11,7 @@ config.front_end = 'WebGpu'
 
 if wezterm.target_triple:find 'windows' then
   config.default_prog = { 'pwsh' }
+  config.font_size = 10
 end
 
 if wezterm.target_triple:find 'linux' then
