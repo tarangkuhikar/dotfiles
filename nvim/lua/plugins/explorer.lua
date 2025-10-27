@@ -7,18 +7,30 @@ return {
     {
       "<leader>fe",
       function()
-        Snacks.explorer({ cwd = LazyVim.root(), exclude = { "*.meta" } })
+        Snacks.explorer({ cwd = LazyVim.root() })
       end,
       desc = "Explorer Snacks (root dir)",
     },
     {
       "<leader>fE",
       function()
+        Snacks.explorer()
+      end,
+      desc = "Explorer Snacks (cwd)",
+    },
+    {
+      "<leader>e",
+      function()
+        Snacks.explorer({ cwd = LazyVim.root(), exclude = { "*.meta" } })
+      end,
+      desc = "Explorer Snacks (root dir)",
+    },
+    {
+      "<leader>E",
+      function()
         Snacks.explorer({ exclude = { "*.meta" } })
       end,
       desc = "Explorer Snacks (cwd)",
     },
-    { "<leader>e", "<leader>fe", desc = "Explorer Snacks (root dir)", remap = true },
-    { "<leader>E", "<leader>fE", desc = "Explorer Snacks (cwd)", remap = true },
   },
 }
