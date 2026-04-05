@@ -18,4 +18,8 @@ export VISUAL=nvim
 export DIFFPROG="nvim -d"
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
-export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+
+OS="$(uname)"
+if [[ "${OS}" == "Darwin" ]] then
+  export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+fi
