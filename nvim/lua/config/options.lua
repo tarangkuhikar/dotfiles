@@ -3,3 +3,11 @@
 -- Add any additional options here
 
 vim.g.snacks_animate = false
+
+vim.filetype.add({
+  extension = {
+    uss = "css",
+    tss = "css",
+    uxml = "xml",
+  },
+})
