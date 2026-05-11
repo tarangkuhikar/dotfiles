@@ -46,11 +46,13 @@ local menu = "hyprlauncher"
 -- end)
 
 hl.on("hyprland.start", function()
+	hl.exec_cmd("systemctl --user start hyprpolkit")
 	hl.exec_cmd("hyprsunset")
 	hl.exec_cmd("hyprpaper")
 	hl.exec_cmd("waybar")
 	hl.exec_cmd("hypridle")
-	hl.exec_cmd(terminal)
+	hl.exec_cmd(terminal, { workspace = 1 })
+	hl.exec_cmd("firefox", { workspace = 2 })
 end)
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
@@ -87,7 +89,7 @@ hl.env("HYPRCURSOR_SIZE", "24")
 hl.config({
 	general = {
 		gaps_in = 5,
-		gaps_out = 20,
+		gaps_out = 5,
 
 		border_size = 2,
 
@@ -265,6 +267,8 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
+hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy')) -- dwindle only
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim - | wl-copy")) -- dwindle only
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
