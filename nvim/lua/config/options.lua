@@ -11,4 +11,3 @@ vim.filetype.add({
     uxml = "xml",
   },
 })
-vim.o.shell = "fish"
