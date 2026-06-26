@@ -1,25 +1,49 @@
-[user]
-	name = Tarang Kuhikar
-	email = tarangkuhikar@gmail.com
-[pull]
-	rebase = false
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
+[tag]
+        sort = version:refname
 [init]
-	defaultbranch = main
-[alias]
-	lg = lg1 --all
-	lg1 =  log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' 
-	lg2 = log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
-[core]
-	editor = nvim
-	pager = less -F -X
+        defaultBranch = main
 [diff]
-	tool = nvimdiff
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
+[push]
+        default = simple
+        autoSetupRemote = true
+        followTags = true
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+
+[help]
+        autocorrect = prompt
+[commit]
+        verbose = true
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
+
 [merge]
-	tool = nvimdiff2
+        conflictstyle = zdiff3
+[pull]
+        rebase = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+[alias]
+        lg = lg1 --all
+        lg1 =  log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' 
+        lg2 = log --graph --date-order --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+[user]
+        name = Tarang Kuhikar
+        email = tarangkuhikar@gmail.com
 [includeIf "hasconfig:remote.*.url:*git.devstree.in:*/**"]
-	path = workconfig
+        path = workconfig
