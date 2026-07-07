@@ -1,0 +1,2 @@
+services:
+  "git.devstree.in": "gitlab:git.devstree.in"
