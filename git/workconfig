@@ -5,4 +5,4 @@
 	tool = unityyamlmerge
 [mergetool "unityyamlmerge"]
 	trustExitCode = false
-	cmd = '/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+	cmd = '/Applications/Unity/Hub/Editor/6000.3.19f1/Unity.app/Contents/Helpers/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
